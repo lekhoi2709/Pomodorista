@@ -33,6 +33,7 @@ public class SettingActivity extends AppCompatActivity {
 
         int progress =(int)(pref.getLong("start_time", 10)/1000/60);
         seekBar.setMax(99);
+        seekBar.setMin(5);
         seekBar.setProgress(progress);
         tv_setTime.setText(progress + " mins");
 

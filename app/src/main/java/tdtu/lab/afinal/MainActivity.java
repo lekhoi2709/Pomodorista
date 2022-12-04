@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         SharedPreferences pref = getSharedPreferences("StartTime", Context.MODE_PRIVATE);
-        startTime = pref.getLong("start_time", 600000);
+        startTime = pref.getLong("start_time", 600000*2);
         timeLeft = startTime;
 
         tv_CountDown = findViewById(R.id.tv_Countdown);
